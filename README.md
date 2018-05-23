@@ -1,5 +1,5 @@
 # cerbtk - simple blockchain test
-Just to see how a blockchain approach could solve some fundamental issues. Its a badly hack, most work was done by Adam (see credits).
+Just to see how a blockchain approach could solve some fundamental issues. Its a badly hack, most work was done by Adrian (see credits).
 
 ## API
 
