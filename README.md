@@ -16,7 +16,7 @@ owner of the chain has the full control.
 ToDo:
 - include LetsEncrypt certificates
 - implement as an k8s service (mesh?)
-- add contracting 
+- add contracting for IoT data sharing and handling
 
 ## Credit
 
