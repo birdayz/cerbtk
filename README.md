@@ -1,12 +1,22 @@
-# cerbtk - simple blockchain test
-Just to see how a blockchain approach could solve some fundamental issues. Its a badly hack, most work was done by Adrian (see credits).
+# cerbtk - simple device registry
+Just to see how a blockchain approach could solve some fundamental issues. Supposed as PoC, most work was done by Adrian (see credits).
 
 ## API
 
-instance is available at http://localhost:23230
+The registration instance is available at http://localhost:23230
+
 As for now, it offers the following endpoints:
-* `GET /blocks` for listing all existing blocks in the chain
-* `POST /blocks/write` for mining new block
+* `GET /device` for listing all existing devices in the chain
+* `POST /device/write` for adding new device
+
+Device send registration to the chain, gets a block back which is the device ID for all further communication. 
+Using a private chain is not tamper proof as an public one, the registration process is just simplified and the 
+owner of the chain has the full control.
+
+ToDo:
+- include LetsEncrypt certificates
+- implement as an k8s service (mesh?)
+- add contracting 
 
 ## Credit
 
