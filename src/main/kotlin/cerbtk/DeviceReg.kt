@@ -21,20 +21,17 @@
 // under the License.
 
 package cerbtk
+import io.javalin.Javalin
 
-import org.apache.commons.codec.digest.DigestUtils
-import java.util.*
+val cerbtk = Blockchain
 
-class Block(val index: Int,
-            val previousHash: String,
-            val data: Any,
-            val proofOfWork: Int) {
-
-    val hash = calculateHash()
-    val timestamp: Long = Date().time
-
-    private fun calculateHash(): String {
-        val input = (index.toString() + previousHash + timestamp + data).toByteArray()
-        return DigestUtils.sha256Hex(input)
+fun main(args: Array<String>) {
+    val app = Javalin.start(23230)
+    app.get("/device") { ctx ->
+        ctx.json(cerbtk.chain)
+    }
+    app.post("/device/write") { ctx ->
+        val minedBlock = cerbtk.mineBlock(ctx.body())
+        ctx.json(minedBlock)
     }
 }
