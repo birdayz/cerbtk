@@ -3,14 +3,15 @@
 //
 // (c) 2018 Adrian Marszałek
 
-package cerbtk
+package com.infinimesh.registry.cerbtk
+
 import io.javalin.Javalin
 
 val cerbtk = Blockchain
 
 fun main(args: Array<String>) {
     val app = Javalin.start(23230)
-    app.get("/device") { ctx ->
+    app.get("/device/get") { ctx ->
         ctx.json(cerbtk.chain)
     }
     app.post("/device/write") { ctx ->
