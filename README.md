@@ -6,7 +6,7 @@ Just to see how a blockchain approach could solve some fundamental issues. Suppo
 The registration instance is available at http://localhost:23230
 
 As for now, it offers the following endpoints:
-* `GET /device` for listing all existing devices in the chain
+* `GET /device/all` for listing all existing devices in the chain
 * `POST /device/write` for adding new device
 
 Device send registration to the chain, gets a block back which is the device ID for all further communication. 

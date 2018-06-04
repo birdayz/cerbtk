@@ -11,7 +11,7 @@ val cerbtk = Blockchain
 
 fun main(args: Array<String>) {
     val app = Javalin.start(23230)
-    app.get("/device/get") { ctx ->
+    app.get("/device/all") { ctx ->
         ctx.json(cerbtk.chain)
     }
     app.post("/device/write") { ctx ->
