@@ -3,7 +3,7 @@
 //
 // (c) 2018 Adrian Marszałek
 
-package com.infinimesh.registry.cerbtk
+package registry.cerbtk
 
 object Blockchain {
     val chain = mutableListOf<Block>()

@@ -20,7 +20,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package com.infinimesh.registry.cerbtk
+package registry.cerbtk
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test

@@ -3,7 +3,7 @@
 //
 // (c) 2018 Adrian Marszałek
 
-package com.infinimesh.registry.cerbtk
+package registry.cerbtk
 
 import io.javalin.Javalin
 
