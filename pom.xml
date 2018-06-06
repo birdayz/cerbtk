@@ -99,7 +99,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>registry.cerbtk.BlockchainKt</mainClass>
+                                    <mainClass>registry.cerbtk.DeviceRegKt</mainClass>
                                 </manifest>
                             </archive>
                             <descriptorRefs>
